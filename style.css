@@ -13,7 +13,7 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,8 +44,29 @@ li a:hover {
     background-color: lightgrey;
 }
 
-.container div {
-    background-color: powderblue;
-    text-align: center;
-   
+.gallery-audemars {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./img/audemars/bgvert.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.gallery-audemars img {
+    width: 300px; /* Ajustez la largeur des images selon vos besoins */
+}
+
+
+
+.gallery-rolex {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./img/rolex/bgrolex.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.gallery-rolex img {
+    width: 300px; /* Ajustez la largeur des images selon vos besoins */
 }
