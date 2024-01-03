@@ -49,7 +49,7 @@ li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url('./img/audemars/bgvert.jpg') no-repeat center center fixed;
+    background: url('./img/audemars/bgnuage.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -69,4 +69,16 @@ li a:hover {
 }
 .gallery-rolex img {
     width: 300px; /* Ajustez la largeur des images selon vos besoins */
+}
+
+.gallery-cartier {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./img/cartier/bgcartier.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.gallery-cartier img {
+    width: 300px; /* Ajustez la largeur des images selon vos besoins */ 
 }
