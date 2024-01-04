@@ -1,10 +1,17 @@
+/* General reset to remove default margins and paddings */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(25, 113, 73);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    background-color: rgb(162, 216, 211);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 li {
@@ -13,72 +20,82 @@ li {
 
 li a {
     display: block;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px; /* Adjusted padding for better responsiveness */
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #ffffff;
 }
 
-.gallery {
+/* Header styles */
+header {
+    overflow: hidden; /* Clear the float */
+}
+
+header div {
+    max-width: 100%; /* Set maximum width for the video container */
+    margin: 0 auto; /* Center the video container */
+}
+
+header video {
+    width: 100%; /* Ensure the video takes up 100% width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove extra space below inline video elements */
+}
+
+/* Gallery styles */
+.gallery-rolex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
 }
 
-.gallery img {
-    width: 100px;
-    height: 100px;
+.gallery-rolex img {
+    max-width: 100%;
+    height: auto;
     border: 2px solid black;
+    margin-bottom: 10px;
 }
 
-
+/* Container styles */
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
+    padding: 10px;
     background-color: lightgrey;
 }
 
-.gallery-audemars {
-    padding-top: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: url('./img/audemars/bgnuage.jpg') no-repeat center center fixed;
-    background-size: cover;
+.container div {
+    background-color: powderblue;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.gallery-audemars img {
-    width: 300px; /* Ajustez la largeur des images selon vos besoins */
-}
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    li a {
+        padding: 14px 10px;
+    }
 
+    .gallery-rolex img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+    }
 
+    .container {
+        padding: 5px;
+    }
 
-.gallery-rolex {
-    padding-top: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: url('./img/rolex/bgrolex.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-.gallery-rolex img {
-    width: 300px; /* Ajustez la largeur des images selon vos besoins */
-}
-
-.gallery-cartier {
-    padding-top: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: url('./img/cartier/bgcartier.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-.gallery-cartier img {
-    width: 300px; /* Ajustez la largeur des images selon vos besoins */ 
+    .container div {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
 }
