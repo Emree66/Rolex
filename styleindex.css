@@ -1,10 +1,19 @@
-ul {
+
+
+
+.menubar {
+    text-align:center;
+    width:900px;
+    height:75px;
+    border-top-left-radius : 400px 0px ;
+    border-top-right-radius : 100px 0px ;
+    border-bottom-right-radius : 100px 80px;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 50;
     overflow: hidden;
-    background-color: rgb(162, 216, 211);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    background-color: wheat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -14,14 +23,22 @@ li {
 
 li a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
-    padding: 14px 32px; 
+    padding: 25px 20px; 
     text-decoration: none;
+    font-weight:bold;
+    font-size:large;
 }
 
 li a:hover {
-    background-color: #ffffff;
+    background-color: white;
+}
+
+.liacc {
+    background-color: #00000000;
+    opacity:30%;
+    color: #ffffff;
 }
 
 .gallery {
@@ -35,7 +52,6 @@ li a:hover {
     height: 100px;
     border: 2px solid black;
 }
-
 
 .container {
     display: flex;
@@ -51,5 +67,85 @@ li a:hover {
    
 }
 
-@media screen and (max-width: 600px) {
-    li
+header img {
+    width: 1690px;
+    height: 400px;
+}
+
+footer {
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 100;
+    width: 96.7%;
+    height: auto;
+}
+
+.p {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.gallery-accueil {
+    color: wheat;
+    text-align: center;
+    align-items: center; 
+    padding-top: 150px;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./bgaccueil.avif') no-repeat center center fixed;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold;
+    padding-bottom: 20px;
+    font-size:x-large;
+        
+}
+
+.gallery-marques {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size:unset;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border: 20px solid #ffffff;
+    padding: 5px 10px;
+    background-color:black;
+    font-size:large;
+}
+.gallery-marques img {
+    width: 300px; 
+}
+
+
+.gallery-marques2 {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./img/bgboutique.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px; 
+    border: 20px solid #0b0b0b;
+}
+
+.priix {
+    font-size: 15px; /* Taille de police importante */
+    color: #ffffff; /* Couleur vive ou contrastante */
+    font-weight: bold; /* Gras */
+    border: 1px solid #000000; /* Encadrement */
+    padding: 5px 5px; /* Ajoutez de l'espace autour du prix */
+    background-color: #333; /* Fond coloré */
+    display: inline-block;
+    float:right;
+    a:link {color: #ffffff; text-decoration: none;}
+    a:visited {text-decoration: none; color: #666;}
+    a:hover {text-decoration: none;color: #C30;}
+    a:active {text-decoration: none;}
+  }

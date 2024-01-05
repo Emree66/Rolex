@@ -1,17 +1,39 @@
-/* General reset to remove default margins and paddings */
-body, h1, h2, h3, p, ul {
-    margin: 0;
-    padding: 0;
+.roleeex {
+    background-color: #0b0b0b;
 }
 
-/* Navigation styles */
-ul {
+.audemaaars {
+    background-color: #8d0101;
+}
+
+header {
+    text-align:center;
+    width:475px;
+    height:75px;
+    border-top-left-radius : 400px 0px ;
+    border-top-right-radius : 100px 0px ;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 50;
     overflow: hidden;
-    background-color: rgb(162, 216, 211);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: wheat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.menubar {
+    text-align:center;
+    width:500px;
+    height:75px;
+    border-top-left-radius : 400px 0px ;
+    border-top-right-radius : 100px 0px ;
+    border-bottom-right-radius : 100px 80px;
+    list-style-type: none;
+    margin: 0;
+    padding: 50;
+    overflow: hidden;
+    background-color: wheat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 li {
@@ -20,82 +42,176 @@ li {
 
 li a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: black;
     text-align: center;
-    padding: 14px 20px; /* Adjusted padding for better responsiveness */
+    padding: 25px 20px; 
     text-decoration: none;
+    font-weight:bold;
+    font-size:large;
 }
 
 li a:hover {
-    background-color: #ffffff;
+    background-color: white;
 }
 
-/* Header styles */
-header {
-    overflow: hidden; /* Clear the float */
+.liselec {
+    background-color: #00000000;
+    opacity:30%;
+    color: #ffffff;
 }
 
-header div {
-    max-width: 100%; /* Set maximum width for the video container */
-    margin: 0 auto; /* Center the video container */
-}
 
-header video {
-    width: 100%; /* Ensure the video takes up 100% width of its container */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Remove extra space below inline video elements */
-}
-
-/* Gallery styles */
-.gallery-rolex {
+.gallery {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
 }
 
-.gallery-rolex img {
-    max-width: 100%;
-    height: auto;
+.gallery img {
+    width: 100px;
+    height: 100px;
     border: 2px solid black;
-    margin-bottom: 10px;
 }
 
-/* Container styles */
 .container {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    height: 200px;
     background-color: lightgrey;
 }
 
-.container div {
-    background-color: powderblue;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
+.gallery-rolex {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./img/rolex/wallpaper\ black\ and\ white.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.gallery-rolex img {
+    width: 300px; 
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 600px) {
-    li a {
-        padding: 14px 10px;
-    }
+.gallery-rolex {
+    color: white; /* Couleur du texte du pied de page */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 20px; /* Espace intérieur du pied de page */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 
-    .gallery-rolex img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 5px;
-    }
+}
 
-    .container {
-        padding: 5px;
-    }
+.gallery-audemars {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./img/audemars/bgaudemars.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255); /* Couleur du texte du pied de page */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 20px; /* Espace intérieur du pied de page */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
 
-    .container div {
-        padding: 10px;
-        margin-bottom: 5px;
-    }
+.gallery-audemars img {
+    width: 300px; 
+}
+
+.gallery-cartier {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./img/cartier/bgcartier.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: black; /* Couleur du texte du pied de page */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 20px; /* Espace intérieur du pied de page */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.video_audemars {
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+.video_audemars video {
+    width: 100%;
+    height: auto;
+
+}
+
+.video_rolex {
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+.video_rolex video {
+    width: 100%;
+    height: auto;
+
+}
+
+.video_cartier {
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+.video_cartier video {
+    width: 100%;
+    height: auto;
+
+}
+
+
+.gallery-cartier img {
+    width: 300px; 
+}
+
+.topBar__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topBar__usp-item {
+    text-align: center;
+}
+
+.topBar__usp-item-label {
+    display: block; 
+}
+
+.wallpaper_montres {
+    width:  100px            ;
+    height: 10px            ;
+}
+
+footer {
+    background-color: black; /* Couleur de fond du pied de page */
+    color: wheat; /* Couleur du texte du pied de page */
+    text-align: right; /* Alignement du texte au centre */
+    padding: 20px; /* Espace intérieur du pied de page */
+    position: absolute; /* Position absolue pour s'assurer que le pied de page reste en bas de la page */
+    bottom: 100; /* Collé en bas de la page */
+    width: 96.7%; /* Occupe toute la largeur */
+    height: auto;
+}
+
+.priix {
+    font-size: 24px; /* Taille de police importante */
+    color: #ffffff; /* Couleur vive ou contrastante */
+    font-weight: bold; /* Gras */
+    border: 2px solid #ffffff; /* Encadrement */
+    padding: 5px 10px; /* Ajoutez de l'espace autour du prix */
+    background-color: #333; /* Fond coloré */
+    display: inline-block; /* Pour que le fond coloré ne s'étende que sur la largeur du texte */
+    a:link {color: #ffffff; text-decoration: none;}
+    a:visited {text-decoration: none; color: #666;}
+    a:hover {text-decoration: none;color: #C30;}
+    a:active {text-decoration: none;}
 }
